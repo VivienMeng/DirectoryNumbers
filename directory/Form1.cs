@@ -36,7 +36,7 @@ namespace directory
                         string concatStr = string.Empty;
                         for (int j = i; j > 0; j--)
                         {
-                            concatStr = strList[j - 1] + concatStr;
+                            concatStr = strList[j - 1].ToLower() + concatStr;
                         }
 
                         if (!uniqueStrings.Contains(concatStr))
